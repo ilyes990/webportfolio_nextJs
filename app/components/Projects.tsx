@@ -5,23 +5,23 @@ import Image from 'next/image'
 const projects = [
   {
     title: "E-commerce Platform",
-    description: "A full-featured online store built with Next.js and Stripe integration.",
-    image: "/project1.jpg"
+    description: "A full-featured online store built with Flutter and Stripe integration (coming soon).",
+    image: "/ecommerce.jfif"
   },
   {
-    title: "Task Management App",
-    description: "A React-based application for organizing and tracking personal and team tasks.",
-    image: "/project2.jpg"
+    title: "AdvenHive",
+    description: "A Flutter-based app for exploring and sharing adventures and planning trips",
+    image: "/adventure app.jpg"
   },
   {
-    title: "Portfolio Website",
-    description: "A responsive portfolio website showcasing my work and skills.",
-    image: "/project3.jpg"
+    title: "Movie API",
+    description: "a movie api that allows you to search for movies and get details about them",
+    image: "/movieApi.jfif"
   },
   {
-    title: "Weather Dashboard",
-    description: "A real-time weather information app using OpenWeatherMap API.",
-    image: "/project4.jpg"
+    title: "NodeMVPs",
+    description: "Agency website built with Next.js and Tailwind CSS",
+    image: "/Frame 26.jpg"
   }
 ]
 

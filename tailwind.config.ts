@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        neuton: ['var(--font-neuton)'],
+        poppins: ['var(--font-poppins)'],
       },
       colors: {
         background: "var(--background)",

@@ -14,7 +14,7 @@ export default function Navbar() {
           height={150} 
           priority
         />
-        <ul className="flex space-x-6 font-neuton font-light">
+        <ul className="flex space-x-6 font-poppins font-light">
           <li><Link href="#about" className="text-white hover:text-gray-300">About Me</Link></li>
           <li><Link href="#contact" className="text-white hover:text-gray-300">Contact Me</Link></li>
           <li><Link href="#how-i-work" className="text-white hover:text-gray-300">How I Work</Link></li>
