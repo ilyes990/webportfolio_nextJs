@@ -18,6 +18,7 @@ export default function Hero() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
+            <Image className="mb-8" src="/apple-icon.png" alt="logo" width={100} height={100} />
             <h1 className="text-4xl font-bold mb-6 font-poppins">Hey</h1>
             <p className="text-lg mb-6 font-poppins font-light">
               I&apos;m Ilyes, 25, a passionate {""}<span className="bg-blue-900 px-1 rounded">Mobile Developer</span>{""}. I studied Big Data analysis and Management at university, but I&apos;m more interested in mobile
