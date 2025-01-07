@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const education = [
   {
     degree: "Bachelor's Degree in Computer Science",
-    institution: "El bordj el badji mokhtar",
+    institution: "Faculty of engineering sciences Bordj El Badji Mokhtar University",
     period: "2020 - 2022",
     description:
       "I studied Computer Science at the University of El Bordj El Badji Mokhtar, where I gained a solid foundation in programming, algorithms, and software development. I also learned about database management and system architecture.",
@@ -13,7 +14,7 @@ const education = [
   },
   {
     degree: "Master's Degree in Big Data anaylisis and Management",
-    institution: "El bordj el badji mokhtar",
+    institution: "Faculty of engineering sciences Bordj El Badji Mokhtar University",
     period: "2017 - 2020",
     description:
       "Specialized in data analysis, machine learning, and statistical modeling. Developed strong analytical and problem-solving skills through various projects and research work.",
@@ -38,7 +39,6 @@ export default function Formation() {
                 <Image
                   src={edu.image}
                   alt={edu.institution}
-                  
                   fill
                   className="object-cover"
                 />
@@ -48,9 +48,13 @@ export default function Formation() {
                 <h3 className="text-2xl font-semibold text-white font-poppins">
                   {edu.degree}
                 </h3>
-                <h4 className="text-xl text-blue-400 font-poppins">
+                <Link
+                  href="https://www.univ-annaba.dz/"
+                  target="_blank"
+                  className="text-xl text-blue-400 font-poppins"
+                >
                   {edu.institution}
-                </h4>
+                </Link>
                 <p className="text-gray-300 font-poppins font-light">
                   {edu.description}
                 </p>
