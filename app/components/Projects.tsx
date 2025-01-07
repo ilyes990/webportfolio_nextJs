@@ -6,7 +6,7 @@ const projects = [
   {
     title: "E-commerce Platform",
     description: "A full-featured online store built with Flutter and Stripe integration (coming soon).",
-    image: "/ecommerce.jfif"
+    image: "/ecommerce.jpg"
   },
   {
     title: "AdvenHive",
@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Movie API",
     description: "a movie api that allows you to search for movies and get details about them",
-    image: "/movieApi.jfif"
+    image: "/movieApi.jpg"
   },
   {
     title: "NodeMVPs",
