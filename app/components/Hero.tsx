@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaX, FaXTwitter } from "react-icons/fa6";
+import {  FaXTwitter } from "react-icons/fa6";
 
 export default function Hero() {
   return (
@@ -20,16 +20,16 @@ export default function Hero() {
           >
             <h1 className="text-4xl font-bold mb-6 font-poppins">Hey</h1>
             <p className="text-lg mb-6 font-poppins font-light">
-              I'm Ilyes, 25, a passionate <span className="bg-blue-900 px-1 rounded">Mobile Developer</span>. I studied Big Data analysis and Management at university, but I'm more interested in mobile
+              I&apos;m Ilyes, 25, a passionate {""}<span className="bg-blue-900 px-1 rounded">Mobile Developer</span>{""}. I studied Big Data analysis and Management at university, but I&apos;m more interested in mobile
               development. I fell in love with Flutter at the Ending of 2022
               and started learning it on my own. I worked on various projects
-              and grew to love it even more. I've built many side projects, and
-              currently, I'm working at a software development company as a
+              and grew to love it even more. I&apos;ve built many side projects, and
+              currently, I&apos;m working at a software development company as a
               Flutter Developer.
             </p>
             
             <p className="text-lg mb-6 font-poppins font-light">
-              I speak {""} <span className="bg-blue-900 px-1 rounded">English</span>  <span className="bg-blue-900 px-1 rounded">French</span> and <span className="bg-blue-900 px-1 rounded">Arabic</span> which
+              I speak {""} <span className="bg-blue-900 px-1 rounded">English</span> {""} <span className="bg-blue-900 px-1 rounded">French</span> {""} and {""} <span className="bg-blue-900 px-1 rounded">Arabic</span> {""} which
               helps me communicate effectively with a diverse range of people.
             </p>
 

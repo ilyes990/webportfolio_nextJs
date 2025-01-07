@@ -13,9 +13,9 @@ export default function HowIWork() {
               How I Work
             </h2>
             <p className="text-lg mb-8 text-gray-300 font-poppins font-light">
-              here's a detailed description, i explain my process and how i
+              here&apos;s a detailed description, i explain my process and how i
               build apps, and also i built a flutter template where you can see
-              my own way of working even better, it's paid but you can check the
+              my own way of working even better, it&apos;s paid but you can check the
               documentation for free
             </p>
             <Link
@@ -35,7 +35,7 @@ export default function HowIWork() {
                 here is the link below to how i structure my flutter projects
               </p>
               <p className="text-lg mb-4 text-yellow-500 font-poppins font-medium">
-                Warning: it's quite technical
+                Warning: it&apos;s quite technical
               </p>
               <Link
                 href="/project-structure"
