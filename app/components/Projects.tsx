@@ -30,17 +30,18 @@ export default function Projects() {
     <section id="projects" className="py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center text-white font-poppins">My Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-5">
           {projects.map((project, index) => (
-            <div key={index} className="bg-gray-800 rounded-lg shadow-md overflow-hidden">
-              <Image 
-                src={project.image} 
-                alt={project.title} 
-                width={300} 
-                height={200} 
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
+            <div key={index} className="bg-gray-800 rounded-lg shadow-md overflow-hidden h-[500px] flex flex-col hover:transform hover:scale-105 transition-transform duration-200">
+              <div className="h-[300px] relative">
+                <Image 
+                  src={project.image} 
+                  alt={project.title} 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4 flex-1">
                 <h3 className="text-xl font-semibold mb-2 text-white font-poppins">{project.title}</h3>
                 <p className="text-gray-300 font-poppins font-light">{project.description}</p>
               </div>

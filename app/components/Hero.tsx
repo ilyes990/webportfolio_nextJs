@@ -2,53 +2,87 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaX, FaXTwitter } from "react-icons/fa6";
 
 export default function Hero() {
   return (
     <section id="about" className="py-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 mb-8 md:mb-0">
-            <h1 className="text-4xl font-bold mb-4 font-poppins">Hey</h1>
+          <motion.div
+            className="md:w-1/2 mb-8 md:mb-0 mx-5"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <h1 className="text-4xl font-bold mb-6 font-poppins">Hey</h1>
             <p className="text-lg mb-6 font-poppins font-light">
-              I'm Ilyes, 25, a passionate Mobile Developer, and i studied data
-              science at the university, but i'm more interested in mobile
-              development. i fell i love with Flutter in the beginning of 2023,
-              and i started learning it by myself, and i started working on some
-              projects, and i started to love it, i built to many side projects,
-              and currently i'm working in Software Development company as a
+              I'm Ilyes, 25, a passionate <span className="bg-blue-900 px-1 rounded">Mobile Developer</span>. I studied Big Data analysis and Management at university, but I'm more interested in mobile
+              development. I fell in love with Flutter at the Ending of 2022
+              and started learning it on my own. I worked on various projects
+              and grew to love it even more. I've built many side projects, and
+              currently, I'm working at a software development company as a
               Flutter Developer.
             </p>
-            <div className="flex space-x-4">
+            
+            <p className="text-lg mb-6 font-poppins font-light">
+              I speak {""} <span className="bg-blue-900 px-1 rounded">English</span>  <span className="bg-blue-900 px-1 rounded">French</span> and <span className="bg-blue-900 px-1 rounded">Arabic</span> which
+              helps me communicate effectively with a diverse range of people.
+            </p>
+
+            <p className="text-lg mb-6 font-poppins">Contact me</p>
+            <div className="flex space-x-8 justify-center">
               <Link
-                href="https://github.com/johndoe"
+                href="https://github.com/ilyes990"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-400 hover:underline font-poppins"
               >
-                GitHub
+                <FaGithub size={24} />
               </Link>
               <Link
-                href="https://linkedin.com/in/johndoe"
+                href="https://linkedin.com/in/ilyes-sissaoui-77a964250/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-400 hover:underline font-poppins"
               >
-                LinkedIn
+                <FaLinkedin size={24} />
               </Link>
               <Link
-                href="https://twitter.com/johndoe"
+                href="https://x.com/ReachIlyes"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-400 hover:underline font-poppins"
               >
-                Twitter
+                <FaXTwitter size={24} />
+              </Link>
+              <Link
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=ilyes.sissaoui@gmail.com`}
+                className="text-blue-400 hover:underline font-poppins"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <MdEmail size={24} />
               </Link>
             </div>
-          </div>
-          <div className="md:w-1/2">
+          </motion.div>
+          <motion.div
+            className="md:w-1/2 ml-10"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <Image
               src="/myphoto.png"
               alt="John Doe"
               width={400}
               height={400}
-              className="mx-auto"
+              className="mx-auto hover:transform hover:scale-105 transition-transform duration-200"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

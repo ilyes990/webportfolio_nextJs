@@ -5,6 +5,8 @@ import Hero from './components/Hero'
 import HowIWork from './components/HowIWork'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
+import Formation from './components/Formation'
+import Skills from './components/Skills'
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Formation />
+        <Skills />
         <HowIWork />
         <Projects />
         <Experience />
@@ -19,4 +23,8 @@ export default function Home() {
     </div>
   )
 }
+
+
+
+
 
